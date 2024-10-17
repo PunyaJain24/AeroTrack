@@ -28,6 +28,11 @@ module.exports = (sequelize, DataTypes) => {
       values: ['InProcess', 'Booked', 'Cancelled'],
       defaultValue: 'InProcess'
     },
+    totalCost: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0
+    }
   }, {
     sequelize,
     modelName: 'Booking',
